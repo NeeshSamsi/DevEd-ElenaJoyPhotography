@@ -435,3 +435,14 @@ footer h4 {
     padding: 1rem;
   }
 }
+
+@media screen and (min-width: 1700px) {
+  html {
+    --h1: 3rem;
+    --h2: 5rem;
+    --h3: 4rem;
+    --h4: 3rem;
+    --text: 3rem;
+    --big: 6rem;
+  }
+} ;
