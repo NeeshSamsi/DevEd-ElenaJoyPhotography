@@ -26,7 +26,7 @@ html {
   --h3: calc(3rem + 1vw);
   --h4: calc(2.4rem + 1vw);
   --text: calc(1.5rem + 1vw);
-  --big: calc(2.4rem + 1vw);
+  --big: calc(6rem + 1vw);
   --special-color: #906272;
   --bg-color: #414141;
   --gray-color: #525252;
@@ -276,6 +276,66 @@ nav {
   grid-row: 1/3;
 }
 
+/* CONTACT SECTION */
+
+.contact {
+  min-height: 90vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+.form-wrapper {
+  flex: 3 1 40rem;
+}
+.form-wrapper h2 {
+  margin: 5rem 0rem;
+}
+.form-wrapper span {
+  font-size: var(--big);
+  color: var(--special-color);
+}
+.form-wrapper label {
+  display: block;
+}
+.form-wrapper input {
+  display: block;
+  margin: 3rem 0rem;
+  background: var(--bg-color);
+  color: white;
+  border: none;
+  padding: 1rem;
+}
+.form-wrapper button {
+  padding: 1rem 8rem;
+  background: var(--special-color);
+  color: white;
+  border: none;
+  width: 100%;
+}
+.contact img {
+  flex: 1 1 40rem;
+}
+
+/* FOOTER SECTION */
+
+footer {
+  background: var(--bg-color);
+  color: white;
+  display: flex;
+  padding: 3rem 5%;
+  align-items: center;
+  flex-wrap: wrap;
+}
+footer ul {
+  display: flex;
+  flex: 1 1 40rem;
+  justify-content: space-between;
+  align-items: center;
+}
+footer h4 {
+  font-size: calc(2.8rem + 1vw);
+  flex: 3 1 40rem;
+}
+
 /* MEDIA QUERY */
 
 @media screen and (max-width: 842px) {
@@ -358,5 +418,20 @@ nav {
   .gallery img {
     grid-row: auto;
     grid-column: auto;
+  }
+
+  /* CONTACT SECTION */
+  .contact img {
+    display: none;
+  }
+
+  /* FOOTER SECTION */
+  footer ul {
+    order: 1;
+  }
+  footer h4 {
+    order: 2;
+    text-align: center;
+    padding: 1rem;
   }
 }
